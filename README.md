@@ -21,6 +21,8 @@
    2. urls
       1. _playground/hello/_ -> _say_hello()_
       2. _playground/hello_html/_ -> _say_hello_html()_
+   3. templates/playground/
+      1. hello.html
 4. helloidol/
    1. urls, playground/urls
       1. _playground/_ -> _hello/_ -> _say_hello()_
