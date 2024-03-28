@@ -31,6 +31,27 @@
       1. _playground/_ -> _hello/_ -> _say_hello()_
       2. _playground/_ -> _hello_html/_ -> _say_hello_html()_
       3. _playground/_ -> _bye_html/_ -> _say_bye_html()_
+---
+5. startapp 아이브
+   1. Terminal
+      1. python manage.py startapp 아이브
+   2. helloidol/settings.py
+      1. '아이브',   in INSTALLED_APPS
+6. 아이브/
+   1. views
+      1. show_유진()
+      2. show_원영()
+   2. templates/아이브/
+      1. 유진.html
+         1. title: 아이브 - 유진
+         2. h1: 아이브
+         3. h2: 유진
+         4. img: 유진 프로필 사진
+            1. border-radius: 50%;
+      2. 원영.html
+   3. urls
+      1. 아이브/ -> 유진/ -> show_유진()
+      2. 아이브/ -> 원영/ -> show_원영()
 
 
 
