@@ -12,6 +12,11 @@ group = {
             'name': '원영',
             'img_src': 'https://mblogthumb-phinf.pstatic.net/MjAyMTA1MDNfMTk5/MDAxNjIwMDAwMjgwNTgz.kdlWHg5e0iIktoDFM-FeWTnorDqq2o0aCRJ_FfFOpM4g.IUQUl99zqQyd79RkrmyTvhU7O5l5_8P_csqens2afgIg.JPEG.elwpdl4282/IMG_9706.jpg?type=w800'
         },
+        {
+            'group_name': '아이브',
+            'name': '가을',
+            'img_src': 'https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2023/01/19/dc6afc2e-4671-4105-96d2-20cedd84561e.jpg'
+        },
     ]
 }
 
@@ -28,3 +33,8 @@ def show_원영(request):
     # context = group['members'][1]
     return render(request, '아이브/멤버.html', context=context)
     # return render(request, '아이브/원영.html')
+
+
+def show_멤버(request, 멤버):
+    context = list(filter(lambda member: 멤버 in member['name'], group['members']))[0]
+    return render(request, '아이브/멤버.html', context=context)

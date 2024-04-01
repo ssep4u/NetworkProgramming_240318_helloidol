@@ -39,10 +39,11 @@
       1. '아이브',   in INSTALLED_APPS
 6. 아이브/
    1. views
-      1. show_유진()
-      2. show_원영()
+      1. ~~show_유진()~~
+      2. ~~show_원영()~~
       3. -> templates에 context 전달
       4. 정보를 하나로 묶고, 거기에서 꺼내오자
+      5. show_멤버()
    2. templates/아이브/
       1. ~~유진.html~~
          1. title: 아이브 - 유진
@@ -54,8 +55,9 @@
       3. 멤버.html
          1. group_name, name, img_src
    3. urls
-      1. 아이브/ -> 유진/ -> show_유진()
-      2. 아이브/ -> 원영/ -> show_원영()
+      1. ~~아이브/ -> 유진/ -> show_유진()~~
+      2. ~~아이브/ -> 원영/ -> show_원영()~~
+      3. `아이브/ -> <멤버>/ -> show_멤버(멤버)`
 
 
 
