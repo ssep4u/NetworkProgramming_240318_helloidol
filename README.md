@@ -41,14 +41,17 @@
    1. views
       1. show_유진()
       2. show_원영()
+      3. -> templates에 context 전달
    2. templates/아이브/
-      1. 유진.html
+      1. ~~유진.html~~
          1. title: 아이브 - 유진
          2. h1: 아이브
          3. h2: 유진
          4. img: 유진 프로필 사진
             1. border-radius: 50%;
-      2. 원영.html
+      2. ~~원영.html~~
+      3. 멤버.html
+         1. group_name, name, img_src
    3. urls
       1. 아이브/ -> 유진/ -> show_유진()
       2. 아이브/ -> 원영/ -> show_원영()
