@@ -42,6 +42,7 @@
       1. show_유진()
       2. show_원영()
       3. -> templates에 context 전달
+      4. 정보를 하나로 묶고, 거기에서 꺼내오자
    2. templates/아이브/
       1. ~~유진.html~~
          1. title: 아이브 - 유진
