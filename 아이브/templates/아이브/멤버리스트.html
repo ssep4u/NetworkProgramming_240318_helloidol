@@ -12,13 +12,20 @@
 <h1>{{ members.0.group_name }} - 멤버리스트</h1>
 <table border="1">
     <tr>
-        <th>이름</th>
+        <th>이름 https://</th>
+        <th>이름 ../</th>
+        <th>이름 /</th>
+        <th>이름 django</th>
         <th>프로필</th>
     </tr>
     {# members에서 하나씩 꺼내어 member에 넣자 #}
     {% for member in members %}
     <tr>
-        <td>{{ member.name }}</td>
+        {# 멤버이름에 링크: 아이브/{{ member.name }}/       #}
+        <td><a href="//localhost:8000/아이브/{{ member.name }}/">{{ member.name }}</a> //: 인터넷 절대</td>
+        <td><a href="../../아이브/{{ member.name }}/">{{ member.name }}</a> ../../: 부모/부모/ 주소(상대)</td>
+        <td><a href="/아이브/{{ member.name }}/">{{ member.name }}</a> /: 호스트 루트(호스트 절대)</td>
+        <td><a href="">{{ member.name }}</a></td>
         {% load static %}
         <td><img src="{% static member.img_src %}" alt="" style="height: 100px; border-radius: 50%;"></td>
     </tr>
