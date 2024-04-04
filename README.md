@@ -45,6 +45,7 @@
       4. 정보를 하나로 묶고, 거기에서 꺼내오자
       5. show_멤버()
       6. image link -> image file(static)
+      7. show_멤버리스트()
    2. templates/아이브/
       1. ~~유진.html~~
          1. title: 아이브 - 유진
@@ -56,10 +57,12 @@
       3. 멤버.html
          1. group_name, name, img_src
          2. `{% load static %}  <img src="{% static img_src %}">`
+      4. 멤버리스트.html
    3. urls
       1. ~~아이브/ -> 유진/ -> show_유진()~~
       2. ~~아이브/ -> 원영/ -> show_원영()~~
       3. `아이브/ -> <멤버>/ -> show_멤버(멤버)`
+      4. 아이브/ -> 멤버리스트/ -> show_멤버리스트()
    4. static/아이브/images/
       1. 고은이.jpg, 원영이.jpg, 유진이.jpg
 

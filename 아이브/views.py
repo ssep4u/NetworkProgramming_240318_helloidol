@@ -41,3 +41,8 @@ def show_원영(request):
 def show_멤버(request, 멤버):
     context = list(filter(lambda member: 멤버 in member['name'], group['members']))[0]
     return render(request, '아이브/멤버.html', context=context)
+
+
+def show_멤버리스트(request):
+    context = group     #{'members': [{멤버1}, {멤버2},]}
+    return render(request, '아이브/멤버리스트.html', context=context)
