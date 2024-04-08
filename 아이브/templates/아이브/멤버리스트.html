@@ -25,7 +25,7 @@
         <td><a href="//localhost:8000/아이브/{{ member.name }}/">{{ member.name }}</a> //: 인터넷 절대</td>
         <td><a href="../../아이브/{{ member.name }}/">{{ member.name }}</a> ../../: 부모/부모/ 주소(상대)</td>
         <td><a href="/아이브/{{ member.name }}/">{{ member.name }}</a> /: 호스트 루트(호스트 절대)</td>
-        <td><a href="">{{ member.name }}</a></td>
+        <td><a href="{% url '아이브:멤버' 멤버=member.name %}">{{ member.name }}</a></td>
         {% load static %}
         <td><img src="{% static member.img_src %}" alt="" style="height: 100px; border-radius: 50%;"></td>
     </tr>
